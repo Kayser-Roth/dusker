@@ -64,7 +64,7 @@ class Kernel implements KernelContract
      *
      * @return int
      */
-    public function handle($input, $output = null)
+    public function handle($input, $output)
     {
         // TODO Handle exceptions
         //try {
