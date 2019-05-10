@@ -64,14 +64,14 @@ class Kernel implements KernelContract
      *
      * @return int
      */
-    public function handle($input, $output)
+    public function handle($input, $output = null)
     {
         // TODO Handle exceptions
-        //try {
-        $this->bootstrap();
+        try {
+            $this->bootstrap();
 
-        return $this->getArtisan()->run($input, $output);
-        /*} catch (Exception $e) {
+            return $this->getArtisan()->run($input, $output);
+        } catch (Exception $e) {
             $this->reportException($e);
 
             $this->renderException($output, $e);
@@ -85,7 +85,7 @@ class Kernel implements KernelContract
             $this->renderException($output, $e);
 
             return 1;
-        }*/
+        }
     }
 
     /**
