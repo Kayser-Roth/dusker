@@ -420,4 +420,9 @@ class Application extends Container implements ApplicationContract, HttpKernelIn
             return $this->call([$provider, 'boot']);
         }
     }
+
+    public function runningUnitTests()
+    {
+        
+    }
 }
