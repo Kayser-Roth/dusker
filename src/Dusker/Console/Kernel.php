@@ -24,6 +24,8 @@ class Kernel implements KernelContract
 
     protected $commands = [];
 
+    protected $outputBuffer;
+
     protected $bootstrappers = [
         \Dusker\Bootstrap\LoadEnvironmentVariables::class,
         \Dusker\Bootstrap\LoadConfiguration::class,
@@ -42,7 +44,7 @@ class Kernel implements KernelContract
      * @param \Illuminate\Contracts\Foundation\Application $app
      * @param \Illuminate\Contracts\Events\Dispatcher      $events
      */
-    public function __construct(Application $app, Dispatcher $events)
+    public function __construct(Application $app, Dispatcher $events, $outputBuffer = NULL)
     {
         if (!defined('ARTISAN_BINARY')) {
             define('ARTISAN_BINARY', 'artisan');
@@ -50,6 +52,7 @@ class Kernel implements KernelContract
 
         $this->app = $app;
         $this->events = $events;
+        $this->outputBuffer = $outputBuffer;
 
         /*$this->app->booted(function () {
             $this->defineConsoleSchedule();
