@@ -19,17 +19,17 @@
   "prefer-stable": true,
   "require": {
     "php": ">=7.0",
-    "composer/composer": "^1.0",
-    "illuminate/config": "^5.8",
-    "illuminate/container": "^5.8",
-    "illuminate/events": "^5.8",
-    "illuminate/filesystem": "^5.8",
-    "illuminate/support": "^5.8",
-    "laravel/dusk": "v5.1.0",
-    "phpunit/phpunit": "^6.0",
-    "symfony/filesystem": "^4.1",
-    "symfony/http-kernel": "^4.1",
-    "vlucas/phpdotenv": "^2.4"
+    "composer/composer": "^1.8",
+    "illuminate/config": "~5.7.0|~5.8.0|~5.9.0",
+    "illuminate/container": "~5.7.0|~5.8.0|~5.9.0",
+    "illuminate/events": "~5.7.0|~5.8.0|~5.9.0",
+    "illuminate/filesystem": "~5.7.0|~5.8.0|~5.9.0",
+    "illuminate/support": "~5.7.0|~5.8.0|~5.9.0",
+    "laravel/dusk": ^5.1.0",
+    "phpunit/phpunit": "^7.5|^8.0",
+    "symfony/filesystem": "^4.0",
+    "symfony/http-kernel": "^4.0",
+    "vlucas/phpdotenv": "^2.4|^2.2|^3.3"
   },
   "require-dev": {
     "mikey179/vfsStream": "^1.6",
