@@ -20,15 +20,15 @@
   "require": {
     "php": ">=7.0",
     "composer/composer": "^1.0",
-    "illuminate/config": "^5.5",
-    "illuminate/container": "^5.5",
-    "illuminate/events": "^5.5",
-    "illuminate/filesystem": "^5.5",
-    "illuminate/support": "^5.5",
-    "laravel/dusk": "^2.0",
+    "illuminate/config": "^5.8",
+    "illuminate/container": "^5.8",
+    "illuminate/events": "^5.8",
+    "illuminate/filesystem": "^5.8",
+    "illuminate/support": "^5.8",
+    "laravel/dusk": "v5.1.0",
     "phpunit/phpunit": "^6.0",
-    "symfony/filesystem": "^3.3",
-    "symfony/http-kernel": "^3.3",
+    "symfony/filesystem": "^4.1",
+    "symfony/http-kernel": "^4.1",
     "vlucas/phpdotenv": "^2.4"
   },
   "require-dev": {
